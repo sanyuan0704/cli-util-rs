@@ -1,0 +1,17 @@
+[package]
+name = "cli-util"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+anyhow = "1" # 错误处理
+bytes = "1.1.0"
+clap = { version = "3.2.5", features = ["derive"] } # 命令行参数处理
+colored = "2" # 命令终端多彩显示
+jsonxf = "1.1" # JSON pretty print 格式化
+lazy_static = "1.4.0"
+mime = "0.3" # 处理 mime 类型
+reqwest = { version = "0.11", features = ["json"] } # HTTP 客户端
+tokio = { version = "1", features = ["full"] } # 异步处理库
+url = "2.2.2"
